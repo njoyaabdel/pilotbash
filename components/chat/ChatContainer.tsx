@@ -13,11 +13,11 @@ export function ChatContainer() {
     <div className="flex flex-col h-full">
       {/* Header */}
       <header
-        className="flex items-center gap-3 px-6 py-4 border-b shrink-0"
+        className="flex items-center gap-3 px-6 py-4 border-b flex-shrink-0"
         style={{ borderColor: 'var(--border)', background: 'var(--surface)' }}
       >
         <div
-          className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold text-white shrink-0"
+          className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold text-white flex-shrink-0"
           style={{ background: 'linear-gradient(135deg, #6366f1, #818cf8)' }}
         >
           $
@@ -54,7 +54,7 @@ export function ChatContainer() {
 
       {/* Error banner */}
       {error && (
-        <div className="px-4 py-2 shrink-0">
+        <div className="px-4 py-2 flex-shrink-0">
           <ErrorBanner message={error} />
         </div>
       )}
